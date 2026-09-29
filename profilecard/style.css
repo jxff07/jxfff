@@ -1,0 +1,112 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Gray Background Canvas */
+  background: radial-gradient(
+    circle at center,
+    #9ca3af 0%,
+    #6b7280 60%,
+    #4b5563 100%
+  );
+  padding: 15px;
+}
+
+/* Information Box: Aesthetic Matte Black Container */
+.profile-card {
+  background: #111111;
+  width: 100%;
+  max-width: 310px;
+  border-radius: 16px;
+  padding: 34px 24px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 28px 50px rgba(0, 0, 0, 0.55);
+}
+
+.avatar {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: none;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* Name: Crisp Pure White */
+.profile-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+/* Title: Soft Muted Gray */
+.profile-title {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #9ca3af;
+  letter-spacing: 0.08em;
+  margin-bottom: 18px;
+}
+
+/* Bio: Off-White / Light Gray */
+.profile-bio {
+  font-size: 0.8rem;
+  line-height: 1.65;
+  color: #e5e7eb;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  margin-bottom: 28px;
+}
+
+/* Action Button: White Button with Black Text */
+.contact-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #d1d5db;
+  border-color: #d1d5db;
+}
